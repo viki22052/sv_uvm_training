@@ -1,0 +1,14 @@
+1 - size(): Returns the number of items in the queue.
+If the queue is empty, it returns 0.
+
+2 - insert(): Inserts the given item at the specified index position.
+
+3 - delete(): Deletes all the elements in the queue or the element whose index is indicated.
+
+4 - pop_front(): Removes and returns the first element of the queue.
+
+5 - pop_back(): Removes and returns the last element of the queue.
+
+6 - push_front(): Inserts the given element at the front of the queue.
+
+7 - push_back(): Inserts the given element at the end of the queue.
