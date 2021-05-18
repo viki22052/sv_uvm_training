@@ -14,9 +14,7 @@ class map;
     a_array[key] = value;
     
     if(a_array.exists(key)) begin
-      
       return 1;
-      
     end
     
     else return 0;
@@ -29,21 +27,15 @@ class map;
     int flag = 0;
     
     foreach(a_array[el]) begin
-      
       if(key == el) begin
-        
         $display("key %s have value %d", el, a_array[key]);
         flag = 1;
         return a_array[key];
-        
       end
-      
     end
     
-     if(!flag) begin
-        
-       $display("Error");
-         
+     if(!flag) begin  
+       $display("Error");   
      end
     
   endfunction
@@ -52,7 +44,6 @@ class map;
   function bit delete(input string key);
   
     if(a_array.exists(key)) begin
-      
     	a_array.delete(key);
       	return 1;
     end
@@ -65,9 +56,7 @@ class map;
   function print();
   
     foreach(a_array[key]) begin
-
       $display("key: %s      value: %d", key, a_array[key]);
-
     end
     
   endfunction
