@@ -11,9 +11,7 @@ module sv_map();
 
     //test
     map.put("truck", 11);
-
     map.get("apple");
-
     map.delete("train");
 
     //prints array after editing  
